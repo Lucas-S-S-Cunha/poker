@@ -26,4 +26,26 @@ function criarBaralho() {
 criarBaralho()
 
 
+
+for(let j = 0;j < howManyPlayers; j++){
+    function cardSort(x) { // Aonde randomicamente sao escolhidas as cartas; x = quantidade de cartas
+
+        let cartas = []
+
+        for (let i = 0; i < x; i++) {
+            const index = Math.floor(Math.random() * baralho.length)
+            cartas.push(baralho[index])
+            baralho.splice(index, 1) 
+        }
+
+
+        return cartas
+    }
+
+        let myCard = cardSort(2)
+        console.log(`Mao ${j+1} tem:`, myCard)
+
+}
+
+
 console.log(baralho)
