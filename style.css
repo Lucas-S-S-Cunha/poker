@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 100vw;
+  height: 100vh;
+  background: #381619;
+}
+.mesa {
+  visibility: visible;
+  background: #063418;
+  width: 1200px;
+  height: 720px;
+  border-radius: 370px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 80px;
+  left: 80px;
+  border: 4px solid #1b0a00;
+}
